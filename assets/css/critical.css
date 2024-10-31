@@ -1,0 +1,89 @@
+@media only screen and (min-width: 0rem) {
+    section#hero {
+        text-align: center;
+        padding: clamp(18rem, 25.95vw, 21.75rem) 1rem 0;
+        padding-bottom: clamp(16.125rem, 12.5vw, 25em);
+        position: relative;
+        z-index: 1;
+    }
+
+    section#hero .background {
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -2;
+    }
+
+    section#hero .background:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: #000;
+        opacity: 0.7;
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        pointer-events: none;
+    }
+
+    section#hero .background img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    section#hero .container {
+        width: 100%;
+        max-width: 67.5rem;
+        margin: auto;
+    }
+
+    section#hero .title {
+        font-size: clamp(2.1375rem, 6.4vw, 3.5125rem);
+        font-weight: 700;
+        line-height: 1.2em;
+        text-align: center;
+        max-width: 52rem;
+        margin: 0 auto clamp(1rem, 4vw, 1.5rem);
+        color: #fff;
+        position: relative;
+    }
+
+    section#hero .title:after {
+        content: "";
+        width: 6.25rem;
+        height: 0.5rem;
+        margin: clamp(1rem, 4vw, 1.5rem) auto clamp(1rem, 4vw, 1.5rem);
+        background: var(--primary);
+        opacity: 1;
+        position: relative;
+        display: block;
+    }
+
+    section#hero .text {
+        font-size: clamp(1rem, 1.95vw, 1.5625rem);
+        line-height: 1.5em;
+        text-align: center;
+        width: 100%;
+        max-width: clamp(29rem, 60vw, 50rem);
+        margin: 0 auto;
+        margin-bottom: clamp(2.5rem, 4vw, 3rem);
+        color: #fff;
+    }
+
+    section#hero .button-solid:before {
+        background: #fff;
+    }
+
+    section#hero .button-solid:hover {
+        color: #000;
+    }
+}

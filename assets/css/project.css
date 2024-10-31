@@ -1,0 +1,8 @@
+@media only screen and (min-width: 0rem) {
+
+    #banner p{
+        color: #ffff;
+        text-align: right;
+        max-width: 35rem;
+    }
+}
